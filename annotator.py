@@ -56,7 +56,7 @@ class MainWindow(QMainWindow):
         self.keep_input_size = keep_input_size
         self.max_size = float(max_size)
 
-        self.setWindowTitle('segment-anything-annotator')
+        self.setWindowTitle('segment-anything-annotator[Haonan Trial Version]')
         self.canvas = Canvas(self,
             epsilon=10.0,
             double_click='close',
@@ -520,7 +520,7 @@ class MainWindow(QMainWindow):
         }
 
         with open(filename, 'w') as f:
-            json.dump(save_data, f)
+            json.dump(save_data, f, indent=4)
         return True
 
     def setClean(self):

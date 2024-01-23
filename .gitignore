@@ -1,0 +1,8 @@
+
+*.pth
+
+output/
+demo_image/
+utils/__pycache__/
+__pycache__/
+
